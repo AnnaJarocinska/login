@@ -23,7 +23,7 @@ if((isset($_SESSION['login'])) && ($_SESSION['login']==true))
     <label>Password <input type="password" name="password"></label>
     <input type="submit" value="confirm">
     </form>
-
+<a href="register.php">Register</a>
 <?php
 
 if(isset($_SESSION['Error']))
