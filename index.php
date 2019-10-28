@@ -2,8 +2,7 @@
 
 session_start();
 
-if((isset($_SESSION['login'])) && ($_SESSION['login']==true))
-{
+if((isset($_SESSION['loggedin'])) && ($_SESSION['loggedin']==true)){
     header('Location: myAccount.php');
     exit();
 }
@@ -26,8 +25,8 @@ if((isset($_SESSION['login'])) && ($_SESSION['login']==true))
 <a href="register.php">Register</a>
 <?php
 
-if(isset($_SESSION['Error']))
-echo $_SESSION['Error']; 
+if(isset($_SESSION['error']))
+echo $_SESSION['error']; 
 
 ?>
 
